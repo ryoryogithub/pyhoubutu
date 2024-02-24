@@ -2,6 +2,8 @@ from cmath import cos
 import math
 import matplotlib.pyplot as plt
 
+print("追加")
+
 dt = 0.01
 x=[]
 y=[]
@@ -19,6 +21,7 @@ for i in range(430):
     vy.append(vy[i] - g*dt)
     x.append(x[i] + vx*dt)
     y.append(y[i] + vy[i]*dt)
+
 
 plt.plot(x,y)
 plt.show()
